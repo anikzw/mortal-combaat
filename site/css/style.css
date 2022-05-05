@@ -1,0 +1,49 @@
+body{
+  margin: 0px;
+padding: 0px;
+background: url(../img/bg.jpg) no-repeat center / cover;/*ростянуть по центру*/
+min-height: 100vh;
+}
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;  
+}
+header{
+  padding: 5px 0;
+}
+
+.container{
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+.logo img{
+  width: 50px;
+}
+.menu-body{
+  flex: 1 1 auto;
+}
+ul{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+li{
+  list-style: none;
+  font-size: 18px;
+  margin-left: 20px;
+  color: #ffffff;
+  transition: all 1s ease 0s;
+}
+li:hover{
+  color:gold;
+  cursor: pointer;
+}
+
+.icon-menu{
+  display: none;
+}

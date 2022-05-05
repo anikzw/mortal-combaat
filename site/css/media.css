@@ -1,0 +1,82 @@
+@media (max-width:530px){
+
+header{
+  position: relative;
+}
+header::before{
+  content:"" ;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 10;
+}
+.container{
+  align-items: center;
+}
+.logo{
+  position: relative;
+  z-index: 11;
+}
+.icon-menu{
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 18px;
+  z-index: 11;
+  background: transparent;
+  border: none;
+  flex: 0 0 30px;
+}
+.icon-menu  span,
+.icon-menu::after,
+.icon-menu::before{
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+}
+.icon-menu::after,
+.icon-menu::before {
+  content: "";
+}
+.icon-menu::after {
+  top: 0;
+}
+.icon-menu::before {
+  bottom: 0;
+}
+.icon-menu span{
+  top:50%;
+  transform: scale(1) translate(0, -50%);
+}
+.menu-body{
+  position: fixed;
+  left: 0;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+
+ul {
+  display: block;
+  padding-top: 100px;
+}
+li {
+  color: #000;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+
+
+
+}
